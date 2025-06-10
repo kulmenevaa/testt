@@ -4,9 +4,7 @@ namespace Glorax\FilamentRedirect;
 
 use Filament\Panel;
 use Filament\Contracts\Plugin;
-use Glorax\FilamentMediaManager\Resources\FolderResource;
-use Glorax\FilamentMediaManager\Resources\MediaResource;
-
+use Glorax\FilamentRedirect\Filament\Resources\RedirectResource;
 
 class FilamentRedirectPlugin implements Plugin
 {
@@ -18,8 +16,7 @@ class FilamentRedirectPlugin implements Plugin
     public function register(Panel $panel): void
     {
         $panel->resources([
-            FolderResource::class,
-            MediaResource::class
+            RedirectResource::class,
         ]);
     }
 

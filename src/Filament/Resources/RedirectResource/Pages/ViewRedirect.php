@@ -13,7 +13,7 @@ class ViewRedirect extends ViewRecord
     public function getHeaderActions(): array
     {
         return [
-            Actions\EditAction::make(),
+            //Actions\EditAction::make(),
             Actions\DeleteAction::make()
         ];
     }

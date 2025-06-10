@@ -15,7 +15,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('redirect', function (Blueprint $table) {
+        Schema::create('redirects', function (Blueprint $table) {
             $table->id();
             $table->string('from_url')->unique();
             $table->string('to_url');
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('redirect');
+        Schema::dropIfExists('redirects');
     }
 };

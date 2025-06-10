@@ -1,7 +1,6 @@
 {
     "name": "glorax/filament-redirect",
     "description": "Filament redirect",
-    "version": "1",
     "keywords": [
         "glorax",
         "laravel",

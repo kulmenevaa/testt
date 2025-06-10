@@ -1,0 +1,43 @@
+{
+    "name": "glorax/filament-redirect",
+    "description": "Filament redirect",
+    "version": "1",
+    "keywords": [
+        "glorax",
+        "laravel",
+        "filament",
+        "redirect"
+    ],
+    "homepage": "https://gitlab.glorax.com/glorax-web/backend/plugins/filament-redirect",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1|^8.2",
+        "filament/filament": "^v3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glorax\\FilamentRedirect\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Glorax\\FilamentRedirect\\FilamentRedirectServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
